@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+a.card_btn {
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+a.card_btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main h1 {
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+main ul.card_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+main ul.card_list li.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+main ul.card_list li.cards_item .card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  flex: 1 1 auto;
+}
+main ul.card_list li.cards_item .card:hover .card_text {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+main ul.card_list li.cards_item .card .card_image img {
+  height: 220px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+main ul.card_list li.cards_item .card .card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  flex: 1;
+}
+main ul.card_list li.cards_item .card .card_content .card_text {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top right, #FFC39E 40%, #EF8D9C 100%);
+  padding: 5px 10px 5px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 8.8rem;
+  left: 0;
+  transition: 0.5s linear;
+}
+main ul.card_list li.cards_item .card .card_content .card_description {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+main .noticeMain {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.made_by {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.made_by a {
+  text-decoration: none;
+}
+.made_by a:hover {
+  color: #EF8D9C;
+}
+
+@media (min-width: 990px) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 990px) {
+  .cards_item {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .cards_item {
+    width: 100% !important;
+  }
+}
